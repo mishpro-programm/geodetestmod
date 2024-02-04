@@ -1,11 +1,11 @@
 #include <Geode/Geode.hpp>
-#include <Geode/modify/DailyLevelPage.hpp>
+#include <Geode/modify/MainLayer.hpp>
 
 using namespace geode::prelude;
 
-class $modify(DailyLevelPage){
-	bool init(GJTimedLevelType p0){
-		if(!DailyLevelPage::init(p0)){
+class $modify(MainLayer){
+	virtual bool init(){
+		if(!MainLayer::init()){
 			return false;
 		}
 		auto menu = CCMenu::create();
