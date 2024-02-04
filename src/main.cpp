@@ -31,6 +31,6 @@ class $modify(MenuLayer) {
 	 * would not place a hook!
 	 */
 	void onMoreGames(CCObject*) {
-		FLAlertLayer::create("Geode", "Hello from my custom mod!", "OK")->show(); 
+		FLAlertLayer::create("Mishpro", "Hello from my custom mod!", "Cancel")->show(); 
 	} 
 };
