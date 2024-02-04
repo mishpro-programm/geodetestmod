@@ -12,7 +12,7 @@ class $modify(ChallengesPage){
 		auto sprite = ButtonSprite::create("Reward");
 		auto btn = CCMenuItemSpriteExtra::create(sprite, this, nullptr);
 		menu->addChild(btn);
-		this->addChild(btn)
+		this->addChild(btn);
 		return true;
 	}
 };
