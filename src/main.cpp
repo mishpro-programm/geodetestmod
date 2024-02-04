@@ -4,7 +4,15 @@
 using namespace geode::prelude;
 
 class $modify(MenuLayer){
-	void onMoreGames(CCObject*){
-		FLAlertLayer::create("More Games", "Bro just type in Play Market \"Geometry Dash\"", "OK")->show();
+	virtual bool init(){
+		if(!MenuLayer::init()){
+			return false;
+		}
+		auto menu = CCMenu::create();
+		auto sprite = ButtonSprite::create("Test");
+		auto btn = CCMenuItemSpriteExtra::create(sprite, this, nullptr);
+		menu->addChild(btn);
+		this->addChild(menu);
+		return true;
 	}
 };
