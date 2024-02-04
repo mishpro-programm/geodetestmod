@@ -1,0 +1,8 @@
+{
+	"geode": "2.0.0",
+	"gd": {"android": "2.205", "win": "2.204", "mac": "2.200"},
+	"id": "mishpro.geodetestmod",
+	"name": "Geode Test Mod",
+	"version": "1.0.0",
+	"developer": "mishpro"
+}
