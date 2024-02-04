@@ -30,7 +30,8 @@ class $modify(MenuLayer) {
 	 * has to match exactly - `bool onMoreGames` 
 	 * would not place a hook!
 	 */
-	void onMoreGames(CCObject*) {
-		FLAlertLayer::create("Mishpro", "Hello from my custom mod!", "Cancel")->show(); 
+	virtual bool init() {
+		FLAlertLayer::create("Alert", "You have my mod installed :)", "OK")->show(); 
+		return true;
 	} 
 };
