@@ -1,11 +1,11 @@
 #include <Geode/Geode.hpp>
-#include <Geode/modify/MainLayer.hpp>
+#include <Geode/modify/MenuLayer.hpp>
 
 using namespace geode::prelude;
 
-class $modify(MainLayer){
+class $modify(MenuLayer){
 	virtual bool init(){
-		if(!MainLayer::init()){
+		if(!MenuLayer::init()){
 			return false;
 		}
 		auto menu = CCMenu::create();
