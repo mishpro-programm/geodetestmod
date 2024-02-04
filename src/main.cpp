@@ -5,7 +5,7 @@
 /**
  * Required to modify the MenuLayer class
  */
-#include <Geode/modify/MenuLayer.hpp>
+#include <Geode/modify/CreatorLayer.hpp>
 
 /**
  * Brings cocos2d and all Geode namespaces 
