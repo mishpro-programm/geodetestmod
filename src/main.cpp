@@ -31,7 +31,6 @@ class $modify(CreatorLayer) {
 	 * would not place a hook!
 	 */
 	void onDailyLevel(CCObject*) {
-		FLAlertLayer::create(":skullemoji:", "bro can't wait for 2.21 :skullemoji:", ":skullemoji:")->show();
-		
+		LoadingLayer::create(true);
 	} 
 };
