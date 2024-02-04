@@ -30,7 +30,7 @@ class $modify(CreatorLayer) {
 	 * has to match exactly - `bool onMoreGames` 
 	 * would not place a hook!
 	 */
-	void onDailyLevel() {
+	void onDailyLevel(CCObject*) {
 		FLAlertLayer::create(":skullemoji:", "bro can't wait for 2.21 :skullemoji:", ":skullemoji:")->show();
 		
 	} 
