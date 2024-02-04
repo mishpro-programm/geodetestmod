@@ -30,7 +30,10 @@ class $modify(MenuLayer) {
 	 * has to match exactly - `bool onMoreGames` 
 	 * would not place a hook!
 	 */
-	virtual bool init() {
+	bool init() {
+		if(!MenuLayer::init()){
+			return false;
+		}
 		FLAlertLayer::create("Alert", "You have my mod installed :)", "OK")->show(); 
 		return true;
 	} 
