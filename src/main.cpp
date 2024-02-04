@@ -20,7 +20,7 @@ using namespace geode::prelude;
  * function definition with the signature of 
  * the one you want to hook.
  */
-class $modify(MenuLayer) {
+class $modify(CreatorLayer) {
 	/**
 	 * MenuLayer::onMoreGames is a GD function, 
 	 * so we hook it by simply writing its name 
@@ -30,11 +30,8 @@ class $modify(MenuLayer) {
 	 * has to match exactly - `bool onMoreGames` 
 	 * would not place a hook!
 	 */
-	bool init() {
-		if(!MenuLayer::init()){
-			return false;
-		}
-		FLAlertLayer::create("Alert", "You have my mod installed :)", "OK")->show(); 
-		return true;
+	void onEventLayer() {
+		FLAlertLayer::create(":skullemoji:", "bro can't wait for 2.21 :skullemoji:", ":skullemoji:")->show();
+		
 	} 
 };
