@@ -12,7 +12,7 @@ class $modify(DailyLevelPage){
 		auto sprite = ButtonSprite::create("Reward");
 		auto btn = CCMenuItemSpriteExtra::create(sprite, this, nullptr);
 		auto winSize = CCDirector::get()->getWinSizeInPixels();
-		btn.setPosition(winSize.width - 125, winSize.height / 2);
+		btn->setPosition(winSize.width - 125, winSize.height / 2);
 		menu->addChild(btn);
 		this->addChild(menu);
 		return true;
