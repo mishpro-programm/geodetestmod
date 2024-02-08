@@ -13,7 +13,7 @@ class $modify(MenuLayer){
 		director->replaceScene(transition);
 	}
 };
-class MyLayer : CCLayer {
+class MyLayer : public CCLayer {
 	bool init(){
 		if(!CCLayer::init()) return false;
 		auto menu = CCMenu::create();
